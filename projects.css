@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap');*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;}
+
+:root{
+    --primary: #b33939;
+    --secondary:rgb(29, 28, 28);
+}
+body{
+    position: relative;
+}
+/* body::before{
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 160px;
+    border: 2px solid var(--primary);
+    transform: rotate(30deg);
+}
+body::after{
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 160px;
+    border: 2px solid var(--primary);
+    transform: rotate(30deg);
+    right: 10rem;
+    bottom: 10px;
+    z-index: 1;
+} */
+.projects{
+    padding: 4rem;
+    background: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+}
+
+.projects::before{
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 160px;
+    border: 2px solid var(--primary);
+    transform: rotate(30deg);
+}
+.projects::after{
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 160px;
+    border: 2px solid var(--primary);
+    transform: rotate(30deg);
+    right: 2rem;
+    bottom: 4rem;
+    z-index: 1;
+}
+ .project-heading{
+     width: 500px;
+     margin: auto;
+     text-align: center;
+     margin-bottom: 3rem;
+     text-transform: uppercase;
+    color: var(--primary);
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+    font-weight: bold;
+    position: relative;
+    /* display: inline; */
+}
+.project-heading::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    background: var(--primary);
+}
+.project-container{
+    /* box-shadow: 0  0 5px rgba(0,0,0,.5); */
+    /* background: rgb(14, 150, 150); */
+    margin: 3rem 0;
+}
+.card {
+    /* text-align: center; */
+    background: none;
+    outline: none;
+    border: none;
+}
+.card img{
+    width: 100%;
+    /* width: 600px; */
+    margin: auto;
+    z-index: 2;
+}
+.card-body button{
+    text-decoration: none;
+    padding: .3rem 1rem;
+    font-size: 1.2rem;
+    margin-left: .6rem;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--primary);
+    box-shadow: 0 0 5px var(--primary);
+}
+.card-body button:hover{
+    box-shadow: 0 0 5px var(--primary), 0 0 10px var(--primary), 0 0 15px var(--primary);
+}
+.card-body button a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.card-body button:hover a{
+       color: var(--primary);
+}
+
+
